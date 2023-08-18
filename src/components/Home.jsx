@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container , Row , Col} from 'react-bootstrap'
-// import HeaderImg from "../Images/img2.svg";
 import HeaderImg from "../Images/ME.png";
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
       name="home"
     >
       <Container>
-        <Row className="gy-3 justify-content-between">
+        <Row className="gy-3 align-items-center justify-content-center">
           <Col
             md="6"
             xl="6"
@@ -21,7 +20,7 @@ const Home = () => {
             <span className="tagline">Hi my name is</span>
             <h1>
               <span className="text-info">Sohaila Abo El-Wafa </span> <br />
-              I'm a Frond End Developer
+              I'm a Frond-End Developer
             </h1>
             <p className="text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -31,11 +30,13 @@ const Home = () => {
             <button class="btn btn-info">Get Started</button>
           </Col>
           <Col md="6" xl="5" sm="12" className=" order-1 order-lg-2 me-3">
+          <div className='text-center'>
             <img
               className="img-fluid mx-auto rounded-circle"
               src={HeaderImg}
               alt="Header Img"
             />
+          </div>
           </Col>
         </Row>
       </Container>

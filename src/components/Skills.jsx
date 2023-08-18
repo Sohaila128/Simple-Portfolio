@@ -16,7 +16,7 @@ const Skills = () => {
         </div>
         <Row className="gy-2 mt-5">
           {mySkills.map((item) => (
-            <Col key={item.id} xl="3">
+            <Col key={item.id} xl="3" sm="6">
               <div className='bg-dark text-center shadow-lg p-2 px-auto skillsCard'>
                 <img
                   className="imgSkills"
